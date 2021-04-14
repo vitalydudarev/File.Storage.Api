@@ -1,8 +1,8 @@
 using AutoMapper;
-using Storage.Service.Database.Entities;
-using Storage.Service.Models;
+using FileStorage.Api.Database.Entities;
+using FileStorage.Api.Models;
 
-namespace Storage.Service
+namespace FileStorage.Api
 {
     public class MappingProfile : Profile
     {

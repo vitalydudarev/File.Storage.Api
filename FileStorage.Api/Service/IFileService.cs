@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using Storage.Service.Models;
+using FileStorage.Api.Models;
 
-namespace Storage.Service.Service
+namespace FileStorage.Api.Service
 {
     public interface IFileService
     {

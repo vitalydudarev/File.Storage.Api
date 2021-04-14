@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Storage.Service": {
+    "FileStorage.Api": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "storage",

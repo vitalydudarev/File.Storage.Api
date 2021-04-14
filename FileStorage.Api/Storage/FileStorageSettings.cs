@@ -1,4 +1,4 @@
-namespace Storage.Service.Storage
+namespace FileStorage.Api.Storage
 {
     public class FileStorageSettings
     {

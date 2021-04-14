@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Storage.Service.Storage
+namespace FileStorage.Api.Storage
 {
     public interface IFileStorage
     {

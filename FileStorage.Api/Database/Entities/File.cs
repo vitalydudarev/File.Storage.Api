@@ -1,6 +1,6 @@
 using System;
 
-namespace Storage.Service.Database.Entities
+namespace FileStorage.Api.Database.Entities
 {
     public class File
     {

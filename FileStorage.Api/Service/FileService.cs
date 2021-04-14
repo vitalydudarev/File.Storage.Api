@@ -1,13 +1,13 @@
 using System;
 using System.Threading.Tasks;
 using AutoMapper;
+using FileStorage.Api.Database.Entities;
+using FileStorage.Api.Database.Repository;
+using FileStorage.Api.Models;
+using FileStorage.Api.Storage;
 using Microsoft.Extensions.Logging;
-using Storage.Service.Database.Entities;
-using Storage.Service.Database.Repository;
-using Storage.Service.Models;
-using Storage.Service.Storage;
 
-namespace Storage.Service.Service
+namespace FileStorage.Api.Service
 {
     public class FileService : IFileService
     {

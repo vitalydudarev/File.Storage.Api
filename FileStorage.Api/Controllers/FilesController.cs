@@ -1,11 +1,11 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
+using FileStorage.Api.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Storage.Service.Service;
 
-namespace Storage.Service.Controllers
+namespace FileStorage.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

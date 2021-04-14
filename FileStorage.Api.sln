@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage.Service.Api", "FileStorage.Api\Storage.Service.Api.csproj", "{FA152F58-150C-406A-BD4B-3FA360BC14D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage.Api", "FileStorage.Api\FileStorage.Api.csproj", "{FA152F58-150C-406A-BD4B-3FA360BC14D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Storage.Service.Migrations
+namespace FileStorage.Api.Migrations
 {
     public partial class InitalMigration : Migration
     {

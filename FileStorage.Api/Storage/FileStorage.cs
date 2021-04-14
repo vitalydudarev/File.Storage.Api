@@ -2,7 +2,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 
-namespace Storage.Service.Storage
+namespace FileStorage.Api.Storage
 {
     public class FileStorage : IFileStorage
     {

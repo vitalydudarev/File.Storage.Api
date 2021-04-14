@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Storage.Service.Database.Entities;
+using FileStorage.Api.Database.Entities;
 
-namespace Storage.Service.Database.Repository
+namespace FileStorage.Api.Database.Repository
 {
     public interface IFileRepository
     {

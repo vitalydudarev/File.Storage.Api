@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using FileStorage.Api.Database.Entities;
 using Microsoft.EntityFrameworkCore;
-using Storage.Service.Database.Entities;
 
-namespace Storage.Service.Database.Repository
+namespace FileStorage.Api.Database.Repository
 {
     public class FileRepository : IFileRepository
     {

@@ -1,5 +1,9 @@
 using System;
 using AutoMapper;
+using FileStorage.Api.Database;
+using FileStorage.Api.Database.Repository;
+using FileStorage.Api.Service;
+using FileStorage.Api.Storage;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http.Features;
@@ -7,12 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Storage.Service.Database;
-using Storage.Service.Database.Repository;
-using Storage.Service.Service;
-using Storage.Service.Storage;
 
-namespace Storage.Service
+namespace FileStorage.Api
 {
     public class Startup
     {
@@ -28,7 +28,7 @@ namespace Storage.Service
         {
             services.AddControllers();
             services.Configure<FileStorageSettings>(Configuration.GetSection("FileStorage"));
-            services.AddTransient<IFileStorage, FileStorage>();
+            services.AddTransient<IFileStorage, Storage.FileStorage>();
             services.AddTransient<IFileRepository, FileRepository>();
             services.AddTransient<IFileService, FileService>();
             services.AddDbContext<FileContext>();

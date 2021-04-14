@@ -1,14 +1,14 @@
 using System;
+using FileStorage.Api.Database.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Storage.Service.Database.Entities;
 
-namespace Storage.Service.Database
+namespace FileStorage.Api.Database
 {
     public class FileContext : DbContext
     {
         private readonly IConfiguration _configuration;
-        
+
         public DbSet<File> Files { get; set; }
 
         public FileContext(IConfiguration configuration, DbContextOptions<FileContext> options)
@@ -24,7 +24,7 @@ namespace Storage.Service.Database
 
             SetDateTimeConverters(modelBuilder);
         }
-        
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (_configuration == null || optionsBuilder.IsConfigured)
@@ -32,7 +32,7 @@ namespace Storage.Service.Database
 
             optionsBuilder.UseNpgsql(_configuration["ConnectionString"]);
         }
-        
+
         /// <summary>
         /// Set converters for DateTime properties so that all values will be written to and read from database as UTC.
         /// </summary>

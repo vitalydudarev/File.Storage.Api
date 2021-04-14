@@ -1,6 +1,6 @@
 using System;
 
-namespace Storage.Service.Models
+namespace FileStorage.Api.Models
 {
     public class OutgoingFile
     {
